@@ -91,7 +91,7 @@ export default UserProfile;
 
 - `setPath(path)`: Sets the current page path.
 - `trackPageView()`: Tracks a page view.
-- `identify({ email, ...customProperties })`: Identifies a user with additional properties.
+- `identify(identifyObject)`: Identifies a user with additional properties.
 - `identifyByEmail(email, customProperties)`: Identifies a user by email.
 - `identifyByID(id, customProperties)`: Identifies a user by ID.
 - `trackCustomBehavioralEvent(eventName, eventProperties)`: Tracks a custom event.

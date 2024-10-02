@@ -31,16 +31,16 @@ export const trackPageView = () => {
     _hsq().push(['trackPageView']);
 };
 
-export const identify = (identify = {}) => {
-    _hsq().push(['identify', identify]);
+export const identify = (identifyObject = {}) => {
+    _hsq().push(['identify', identifyObject]);
 };
 
-export const identifyByEmail = (email, customProperties = {}) => {
-    identify({ email, ...customProperties });
+export const identifyByEmail = (emailValue, customProperties = {}) => {
+    identify({ email: emailValue, ...customProperties });
 };
 
-export const identifyByID = (id, customProperties = {}) => {
-    identify({ id, ...customProperties });
+export const identifyByID = (idValue, customProperties = {}) => {
+    identify({ id: idValue, ...customProperties });
 };
 
 export const trackCustomBehavioralEvent = (eventName, eventProperties = {}) => {
